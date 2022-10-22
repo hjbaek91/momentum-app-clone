@@ -10,7 +10,7 @@
   <body>
     <div class="header">
       <div class="search">
-        <input class="search-bar" type="search" />
+        <input class="search-bar" type="search" placeholder="Search" />
       </div>
       <div id="weather">
         <span></span>
@@ -18,6 +18,7 @@
       </div>
     </div>
     <div class="main-container">
+      <h2 id="clock">00:00:00</h2>
       <form id="login-form" class="hidden">
         <input
           required
@@ -27,14 +28,9 @@
         />
         <button>Log In</button>
       </form>
-      <h2 id="clock">00:00:00</h2>
       <h1 id="greeting" class="hidden"></h1>
       <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
+        <input type="text" placeholder="Today's Agenda" required />
       </form>
       <ul id="todo-list"></ul>
       <div id="quote">
@@ -48,5 +44,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

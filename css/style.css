@@ -21,9 +21,66 @@ body {
   justify-content: space-between;
 }
 
+.search-bar {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.search-bar::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
 .main-container {
   text-align: center;
   margin-top: 20%;
+}
+
+#clock {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+#greeting {
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+#login-form input,
+#todo-form input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#login-form input {
+  margin-bottom: 80px;
+}
+
+#login-form input::placeholder,
+#todo-form input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+#quote {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  margin-left: 10px;
 }
 
 img {
